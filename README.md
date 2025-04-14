@@ -1,5 +1,8 @@
 # MIPDAS: Development and Validation Artificial Intelligence-based Model for Standardized Immunophenotype of Bladder Cancer Using Whole Slide Images
-MIPDAS is an analysis framework based on deep learning and computational pathology. It consists of two steps: 1) Hover-Net: Nuclear segmentation and classification; 2) Graph Neural Network: Feature extraction; 3) XGBoost: Constructing immunophenotype.
+MIPDAS is an analysis framework based on deep learning and computational pathology. It consists of three steps: 
+1) Hover-Net: Nuclear segmentation and classification;
+2) Graph Neural Network: Feature extraction;
+3) XGBoost: Constructing immunophenotype.
 
 # Pre-requisites:
 The packages required have been provided in the file ```requirements.txt```.
