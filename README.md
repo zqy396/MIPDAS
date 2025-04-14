@@ -18,11 +18,11 @@ The classification of immunophenotypes in muscle-invasive bladder cancer (MIBC) 
 This is the official pytorch implementation of MIPDAS. Note that only the Nuclear segmentation and classification step supports batch processing.
 
 # Data prepare
-1. '''F1_CellSegment.py''' for nuclear segmentation and classification:
+1. ```F1_CellSegment.py``` for nuclear segmentation and classification:
 
 This step employs HoVer-Net for simultaneous nuclear segmentation and classification. The model is pre-trained based on PanNuke dataset and can be downloaded from url.
 
-Provide your WSI files as input. We use '''.svs''' WSI files in our work, and theoretically it supports all WSI file formats allowed by HoVer-Net. The step outputs a '''.json''' file including all information on nuclear segmentation and classification for each sample.
+Provide your WSI files as input. We use ```.svs``` WSI files in our work, and theoretically it supports all WSI file formats allowed by HoVer-Net. The step outputs a ```.json``` file including all information on nuclear segmentation and classification for each sample.
 
 
 
