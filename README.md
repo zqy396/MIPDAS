@@ -6,6 +6,7 @@ MIPDAS is an analysis framework based on deep learning and computational patholo
 
 # Pre-requisites:
 The packages required have been provided in the file ```requirements.txt```.
+```pip install -r requirements.txt```
 
 # Abstract
 The classification of immunophenotypes in muscle-invasive bladder cancer (MIBC) is critical for predicting immunotherapy response and patient outcomes. We aimed to develop an artificial intelligence (AI)-based MIBC Immunophenotype Diagnostic System (MIPDAS) using computational pathology and evaluate its clinical utility.
