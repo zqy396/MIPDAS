@@ -26,7 +26,7 @@ This is the official pytorch implementation of MIPDAS. Note that only the Nuclea
 9) ```WSIGraph.py```: define the process of feature extraction.
 
 1. ```F1_CellSegment.py``` for tile processing generated an exception.
-<br>
+
 ```python main.py qupath --input_dir=your_dir --output_dir=your_dir```
 
 <br>
