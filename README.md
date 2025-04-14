@@ -47,7 +47,7 @@ This step employs [HoVer-Net](https://github.com/vqdang/hover_net) for simultane
 ```python main.py feature --input_dir=your_dir --output_dir=your_dir```
 <br>
 
-5. ```F5_FeatureExtract.py``` and ``F6_FeatureExtract.py``` for feature extraction:
+5. ```F5_Visuailzation.py``` and ```F6_Visuailzation.py``` for feature extraction:
 
 ```python main.py visual --input_dir=your_dir --output_dir=your_dir```
 <br>
