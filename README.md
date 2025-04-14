@@ -32,7 +32,7 @@ This is the official pytorch implementation of MIPDAS. Note that only the Nuclea
 
 ```python main.py qupath --input_dir=your_dir --output_dir=your_dir```
 
-<br>
+
 2. ```F2_TiatoolJson.py``` for using TIAtool to output json file.
 
 ```python main.py json --input_dir=your_dir --output_dir=your_dir```
