@@ -50,14 +50,14 @@ This step employs [HoVer-Net](https://github.com/vqdang/hover_net) for simultane
 
 4. ```F4_FeatureExtract.py``` for feature extraction:
 
-```python main.py feature --input_dir=your_dir --output_dir=your_dir```
+```python main.py feature --json_path=<filepath> --wsi_path=<filepath> --output_path=<folderpath> [--xml_path=<path>]```
 <br>
-
+  
 5. ```F5_Visuailzation.py``` and ```F6_Visuailzation.py``` for feature extraction:
 
-```python main.py visual --input_dir=your_dir --output_dir=your_dir```
+```python main.py visual --feature_path=<filepath> --wsi_path=<filepath> --xml_path=<filepath>```
 <br>
-```python main.py visual --input_dir=your_dir --output_dir=your_dir```
+```python main.py visual --feature_path=<filepath> --wsi_path=<filepath> --xml_path=<filepath>```
 
 
 
