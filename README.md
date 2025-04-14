@@ -6,6 +6,7 @@ MIPDAS is an analysis framework based on deep learning and computational patholo
 
 # Pre-requisites:
 The packages required have been provided in the file ```requirements.txt```.
+
 ```pip install -r requirements.txt```
 
 # Abstract
