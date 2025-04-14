@@ -2,27 +2,50 @@
 MIPDAS is an analysis framework based on deep learning and computational pathology. It consists of two steps: 1) Hover-Net: Nuclear segmentation and classification; 2) Graph Neural Network: Feature extraction; 3) XGBoost: Constructing immunophenotype.
 
 # Pre-requisites:
-* Python (3.8.13)
-* h5py (3.6.0)
-* openslide (version 3.4.1)
-* opencv (version 4.5.5)
-* pillow (version 6.2.1)
-* Pytorch (version 1.12.1)
-* scikit-learn (version 1.0.2)
-* matplotlib (version 3.5.2)
-* seaborn (version 0.11.2)
+The packages required have been provided in the file ```requirements.txt```.
 
 # Abstract
 The classification of immunophenotypes in muscle-invasive bladder cancer (MIBC) is critical for predicting immunotherapy response and patient outcomes. We aimed to develop an artificial intelligence (AI)-based MIBC Immunophenotype Diagnostic System (MIPDAS) using computational pathology and evaluate its clinical utility.
 
 This is the official pytorch implementation of MIPDAS. Note that only the Nuclear segmentation and classification step supports batch processing.
 
-# Data prepare
-1. ```F1_CellSegment.py``` for nuclear segmentation and classification:
+# Usage
+```Hover```: the implementation of HoVer-Net, which is cloned from the official implementation
+```main.py```: main function
+```F1_CellSegment.py``` for tile processing generated an exception
+```F2_TiatoolJson.py``` for using TIAtool to output json file
+```F3_CellSegment.py```: nuclear segmentation and classification by calling Hover.
+```F4_FeatureExtract.py```: feature extraction by calling ```WSIGraph.py```.
+```F5_Visualization.py``` and ```F6_Visualization.py```: visualization by calling ```utils_xml.py```.
+```utils_xml.py```: define some tools to finish visualization.
+```WSIGraph.py```: define the process of feature extraction.
 
-This step employs HoVer-Net for simultaneous nuclear segmentation and classification. The model is pre-trained based on PanNuke dataset and can be downloaded from url.
+1. ```F1_CellSegment.py``` for tile processing generated an exception.
+```python main.py qupath --input_dir=your_dir --output_dir=your_dir```
 
-Provide your WSI files as input. We use ```.svs``` WSI files in our work, and theoretically it supports all WSI file formats allowed by HoVer-Net. The step outputs a ```.json``` file including all information on nuclear segmentation and classification for each sample.
+
+2. ```F2_TiatoolJson.py``` for using TIAtool to output json file.
+```python main.py json --input_dir=your_dir --output_dir=your_dir```
+
+3. ```F3_CellSegment.py``` for nuclear segmentation and classification.
+This step employs [HoVer-Net](https://github.com/vqdang/hover_net) for simultaneous nuclear segmentation and classification. The model is pre-trained based on PanNuke dataset and can be downloaded from [url](https://drive.google.com/file/d/1SbSArI3KOOWHxRlxnjchO7_MbWzB4lNR/view).
+
+```python main.py segment --input_dir=your_dir --output_dir=your_dir```
+
+4. ```F4_FeatureExtract.py``` for feature extraction:
+```python main.py feature --input_dir=your_dir --output_dir=your_dir```
+
+5. ```F5_FeatureExtract.py``` and ``F6_FeatureExtract.py``` for feature extraction:
+```python main.py visual --input_dir=your_dir --output_dir=your_dir```
+```python main.py visual --input_dir=your_dir --output_dir=your_dir```
+
+
+
+
+
+
+
+
 
 
 
