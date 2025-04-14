@@ -6,7 +6,7 @@ MIPDAS is an analysis framework based on deep learning and computational patholo
 
 # Pre-requisites:
 The packages required have been provided in the file ```requirements.txt```.
-
+<br>
 ```pip install -r requirements.txt```
 
 # Abstract
@@ -26,22 +26,28 @@ This is the official pytorch implementation of MIPDAS. Note that only the Nuclea
 9) ```WSIGraph.py```: define the process of feature extraction.
 
 1. ```F1_CellSegment.py``` for tile processing generated an exception.
+<br>
 ```python main.py qupath --input_dir=your_dir --output_dir=your_dir```
 
 
 2. ```F2_TiatoolJson.py``` for using TIAtool to output json file.
+<br>
 ```python main.py json --input_dir=your_dir --output_dir=your_dir```
 
 3. ```F3_CellSegment.py``` for nuclear segmentation and classification.
+<br>
 This step employs [HoVer-Net](https://github.com/vqdang/hover_net) for simultaneous nuclear segmentation and classification. The model is pre-trained based on PanNuke dataset and can be downloaded from [url](https://drive.google.com/file/d/1SbSArI3KOOWHxRlxnjchO7_MbWzB4lNR/view).
-
+<br>
 ```python main.py segment --input_dir=your_dir --output_dir=your_dir```
 
 4. ```F4_FeatureExtract.py``` for feature extraction:
+<br>
 ```python main.py feature --input_dir=your_dir --output_dir=your_dir```
 
 5. ```F5_FeatureExtract.py``` and ``F6_FeatureExtract.py``` for feature extraction:
+<br>
 ```python main.py visual --input_dir=your_dir --output_dir=your_dir```
+<br>
 ```python main.py visual --input_dir=your_dir --output_dir=your_dir```
 
 
