@@ -14,7 +14,8 @@ The classification of immunophenotypes in muscle-invasive bladder cancer (MIBC) 
 
 This is the official pytorch implementation of MIPDAS. Note that only the Nuclear segmentation and classification step supports batch processing.
 
-# Usage
+# Repository Structure
+
 1) ```Hover```: the implementation of HoVer-Net, which is cloned from the official [implementation](https://github.com/vqdang/hover_net)
 2) ```main.py```: main function
 3) ```F1_CellSegment.py``` for tile processing generated an exception
@@ -24,6 +25,8 @@ This is the official pytorch implementation of MIPDAS. Note that only the Nuclea
 7) ```F5_Visualization.py``` and ```F6_Visualization.py```: visualization by calling ```utils_xml.py```.
 8) ```utils_xml.py```: define some tools to finish visualization.
 9) ```WSIGraph.py```: define the process of feature extraction.
+
+# Usage
 
 1. ```F1_CellSegment.py``` for tile processing generated an exception.
 
