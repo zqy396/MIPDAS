@@ -13,15 +13,15 @@ The classification of immunophenotypes in muscle-invasive bladder cancer (MIBC) 
 This is the official pytorch implementation of MIPDAS. Note that only the Nuclear segmentation and classification step supports batch processing.
 
 # Usage
-```Hover```: the implementation of HoVer-Net, which is cloned from the official implementation
-```main.py```: main function
-```F1_CellSegment.py``` for tile processing generated an exception
-```F2_TiatoolJson.py``` for using TIAtool to output json file
-```F3_CellSegment.py```: nuclear segmentation and classification by calling Hover.
-```F4_FeatureExtract.py```: feature extraction by calling ```WSIGraph.py```.
-```F5_Visualization.py``` and ```F6_Visualization.py```: visualization by calling ```utils_xml.py```.
-```utils_xml.py```: define some tools to finish visualization.
-```WSIGraph.py```: define the process of feature extraction.
+1) ```Hover```: the implementation of HoVer-Net, which is cloned from the official [implementation](https://github.com/vqdang/hover_net)
+2) ```main.py```: main function
+3) ```F1_CellSegment.py``` for tile processing generated an exception
+4) ```F2_TiatoolJson.py``` for using TIAtool to output json file
+5) ```F3_CellSegment.py```: nuclear segmentation and classification by calling Hover.
+6) ```F4_FeatureExtract.py```: feature extraction by calling ```WSIGraph.py```.
+7) ```F5_Visualization.py``` and ```F6_Visualization.py```: visualization by calling ```utils_xml.py```.
+8) ```utils_xml.py```: define some tools to finish visualization.
+9) ```WSIGraph.py```: define the process of feature extraction.
 
 1. ```F1_CellSegment.py``` for tile processing generated an exception.
 ```python main.py qupath --input_dir=your_dir --output_dir=your_dir```
